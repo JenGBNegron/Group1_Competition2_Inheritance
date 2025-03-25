@@ -69,10 +69,10 @@ Books after borrowing: Title: The Art of Data Strategy, Author: Liam Reynolds, A
 
 | **Name**     | **Responsibilities**                                          |
 |--------------|---------------------------------------------------------------|
-| **Jennifer** | Wrote the main program in `Program.cs` and set up GitHub repo |
+| **Jennifer** | Wrote the main program in `Program.cs`, `Person.cs` and set up GitHub repo |
 | **Chandar**  | Developed `Book.cs` and `Staff.cs` classes                    |
 | **Faisal**   | Implemented `Library.cs`              |
-| **Ronia**    | Created base class `Person.cs`                                |
+| **Ronia**    | Created base class `Student.cs`                                |
 
 ---
 
