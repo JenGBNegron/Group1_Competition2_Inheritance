@@ -1,4 +1,6 @@
 // Program.cs
+using System;
+using Classes; 
 class Program
 {
     static void Main()
