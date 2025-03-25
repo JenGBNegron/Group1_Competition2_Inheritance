@@ -7,7 +7,7 @@ namespace Classes
     // Backing fields
     private string name;
     private string email;
-    private int id;
+    private string id;
 
     // Properties with getters and setters
     public string Name
@@ -29,7 +29,7 @@ namespace Classes
     }
 
     // Constructor
-    public Person(string name, string email, int id)
+    public Person(string name, string email, string id)
     {
         this.name = name;
         this.email = email;
