@@ -1,118 +1,198 @@
-# Group1_Competition2_Inheritance
-Competition 2 - Inheritance Repo for Group 1 
-Introduction:
-Object-Oriented Programming (OOP) is a crucial paradigm in modern software development that enables developers to design scalable, reusable, and maintainable applications. By organizing code into classes and objects, OOP facilitates efficient problem-solving and code management. Its core principles—Inheritance, Encapsulation, Abstraction, and Polymorphism—help developers create flexible, modular, and extensible systems. Inheritance, for example, allows one class to inherit properties and behaviors from another, thereby promoting code reusability and reducing redundancy. Moreover, OOP encourages a logical organization of code, making it easier to maintain and extend over time. This structured approach is foundational to designing real-world applications that require clear hierarchies, like systems for library management, e-commerce, and content management.
+# 📘 Competition2 - Inheritance
+# 📚 USF Library Management System – Group1_Competition2_Inheritance
+## 🧠 Introduction
+Object-Oriented Programming (OOP) is a crucial paradigm in modern software development that enables developers to design scalable, reusable, and maintainable applications. By organizing code into classes and objects, OOP facilitates efficient problem-solving and code management.
 
-Learning Objectives:
-Upon completing this competition, you will:
+In this project, we used **Inheritance** to promote code reusability and reduce redundancy. By creating a class hierarchy involving people (students and staff) and books, we structured a Library Management System that reflects real-world relationships. This approach is essential for designing systems like library management, e-commerce platforms, and content management systems.
 
-Understand and apply key principles of Object-Oriented Programming.
+---
 
-Design and implement systems using classes, objects, inheritance, and encapsulation.
+## 🎯 Learning Objectives
+Upon completing this competition, we successfully:
+- Applied key principles of Object-Oriented Programming.
+- Designed and implemented a system using classes, objects, inheritance, and encapsulation.
+- Collaborated effectively using GitHub for version control.
+- Developed a functional USF Library Management System with borrowing operations.
+- Followed best practices in software design, such as clear code structure and naming conventions.
 
-Collaborate effectively within a team environment using version control systems like Git and GitHub.
+---
 
-Demonstrate the ability to develop a functional library management system, implementing operations such as borrowing and returning books, adding patrons, and displaying library data.
+## 📚 Assignment Summary
 
-Follow best practices in software design, including clear code organization, meaningful naming conventions, and regular code commits.
+We created a **Library Management System** that performs the following:
+- Manages collections of books and patrons (students and staff).
+- Allows borrowing of books with availability validation.
+- Displays detailed information about books and patrons.
 
-Assignment Instructions:
-In this competition, you will work collaboratively in groups to develop a USF Library Management System. This system will manage books, students, and staff, implementing basic operations such as borrowing, returning, and displaying relevant details about books and patrons.
+### 📦 Classes Implemented
+- `Person` (Base class) → Name, Email, ID.
+- `Student` (inherits from Person) → Adds Major, GraduationYear.
+- `Staff` (inherits from Person) → Adds Position, Department.
+- `Book` → Title, Author, ISBN, AvailableCopies, method: `BorrowBook()`.
+- `Library` → Manages collections and includes:
+  - `DisplayBooks()`
+  - `DisplayPatrons()`
 
-As a group, you will apply Object-Oriented Programming (OOP) concepts such as inheritance and encapsulation to build the system. Additionally, you will practice using GitHub for version control and code collaboration.
+---
 
-You will develop a Library Management System that includes the following:
+## 🔁 Scenario Implementation
 
-Classes to Create:
-Person → Base class with Name, Email, and ID properties.
+### ✅ Books Created:
+- The Art of Data Strategy by Liam Reynolds (4 copies)
+- Business Insights with AI by Olivia Carter (3 copies)
+- Analytics in Action by Nathan Brooks (6 copies)
 
-Student → Inherits from Person, adds Major and GraduationYear properties.
+### ✅ Students:
+- Akhil, Business Analytics, Graduating 2026
+- Sandeep, Information Systems, Graduating 2025
 
-Staff → Inherits from Person, adds Position and Department properties.
+### ✅ Staff:
+- Grandon Gill, Librarian, Library Services
 
-Book → Includes properties for Title, Author, ISBN, AvailableCopies, and method BorrowBook
+### 📖 Borrowing Scenario:
+1. **Sandeep** borrows *Business Insights with AI*  
+2. **Akhil** borrows *Analytics in Action*
 
-Library → Manages a collection of books and patrons : DisplayBooks, DisplayPatrons
+### 🧾 Expected Console Output:
 
-Functionality to Implement:
-Add new books and patrons.
+Books in Library: Title: The Art of Data Strategy, Author: Liam Reynolds, Available Copies: 4 Title: Business Insights with AI, Author: Olivia Carter, Available Copies: 3 Title: Analytics in Action, Author: Nathan Brooks, Available Copies: 6
 
-Borrow and return books.
+Patrons in Library: Name: Akhil, ID: S001 Name: Sandeep, ID: S002 Name: Grandon Gill, ID: ST001
 
-Display library information, including book details and patron details.
+Borrowing Books... Sandeep borrowed 'Business Insights with AI' Akhil borrowed 'Analytics in Action'
 
-Perform validation checks (e.g., verify book availability).
+Books after borrowing: Title: The Art of Data Strategy, Author: Liam Reynolds, Available Copies: 4 Title: Business Insights with AI, Author: Olivia Carter, Available Copies: 2 Title: Analytics in Action, Author: Nathan Brooks, Available Copies: 5
 
-Objects to Create:
-You will create the following objects in the Main method.
+---
 
-Books:
+## 👥 Group Members & Responsibilities
 
-Book(“The Art of Data Strategy”, “Liam Reynolds”, “ISBN111”, 4)
-Book(“Business Insights with AI”, “Olivia Carter”, “ISBN222”, 3)
-Book(“Analytics in Action”, “Nathan Brooks”, “ISBN333”, 6)
-Students:
+| **Name**     | **Responsibilities**                                          |
+|--------------|---------------------------------------------------------------|
+| **Jennifer** | Wrote the main program in `Program.cs` and set up GitHub repo |
+| **Chandar**  | Developed `Book.cs` and `Staff.cs` classes                    |
+| **Faisal**   | Implemented `Library.cs`              |
+| **Ronia**    | Created base class `Person.cs`                                |
 
-Student(“Akhil”, “akhil@usf.edu”, “S001”, “Business Analytics”, 2026)
-Student(“Sandeep”, “sandeep@usf.edu”, “S002”, “Information Systems”, 2025)
-Staff:
+---
 
-Staff(“Grandon Gill”, “grandon@usf.edu”, “ST001”, “Librarian”, “Library Services”)
-Task/Scenario: 
-For the scope of this competition, we are just implementing a simple borrow books scenario. If interested, you can extend the scope.
+## 🔧 GitHub Workflow & Commands Used
 
-1. Borrow Books:
+### Step-by-step Git Workflow:
+1. **Repository Creation** by Jennifer  
+   `Group1_Competition2_Inheritance`
 
-Sandeep borrows “Business Insights with AI”.
+2. **Clone the repo**  
+ 
+   git clone https://github.com/your-org/Group1_Competition2_Inheritance.git
+   cd Group1_Competition2_Inheritance
 
-Akhil borrows “Analytics in Action”.
 
-2. Update and Display:
+💻 Git & GitHub Commands by Group Member
+👩‍💻 Jennifer – Program.cs & GitHub Repo Setup
 
-After borrowing, update the available copies for the books.
 
-Display the list of books with their updated availability.
+# 1. Create GitHub repository (via GitHub UI or CLI)
+gh repo create Group1_Competition2_Inheritance --public
 
-Expected Output:
-In the output, implement the above scenario.
+# 2. Clone the repo locally
+git clone https://github.com/group1/Group1_Competition2_Inheritance.git
+cd Group1_Competition2_Inheritance
 
-Display the books with their initial availability (before borrowing)
+# 3. Create a branch for main program
+git checkout -b jennifer-main
 
-Display the Patrons in the Library
+# 4. Add Program.cs file with Main method
+# (created manually in IDE or textor)
 
-Display the borrowing books.
+# 5. Stage and commit changes
+git add Program.cs
+git commit -m "Added main logic to Program.cs"
 
-Display the books in Library (after borrowing)
+# 6. Push the branch to GitHub
+git push origin jennifer-main
 
-Sample Reference Output:
-Books in Library:
-Title: The Art of Data Strategy, Author: Liam Reynolds, Available Copies: 4
-Title: Business Insights with AI, Author: Olivia Carter, Available Copies: 3
-Title: Analytics in Action, Author: Nathan Brooks, Available Copies: 6
+# 7. Create a Pull Request on GitHub and merge into main
+🧑‍💻 Chandar – Book.cs and Staff.cs
 
-Patrons in Library:
-Name: Akhil, ID: S001
-Name: Sandeep, ID: S002
-Name: Grandon Gill, ID: ST001
 
-Borrowing Books...
-Sandeep borrowed 'Business Insights with AI'
-Akhil borrowed 'Analytics in Action'
+Edit
+# 1. Create a new branch for Book and Staff
+git checkout -b chandar-books-staff
 
-Books after borrowing:
-Books in Library:
-Title: The Art of Data Strategy, Author: Liam Reynolds, Available Copies: 4
-Title: Business Insights with AI, Author: Olivia Carter, Available Copies: 2
-Title: Analytics in Action, Author: Nathan Brooks, Available Copies: 5
-Best Practices:
-Divide tasks effectively – Assign different responsibilities to each member (e.g., one works on Student and Person classes, another on Library implementation, etc.).
+# 2. Add Book.cs
+# 3. Add Staff.cs
 
-Collaborate on GitHub – Work together using GitHub to manage code.
+# 4. Stage and commit
+git add Book.cs Staff.cs
+git commit -m "Added Book and Staff classes with borrowing logic"
 
-Use clear and meaningful names – Ensure class, method, and variable names are descriptive.
+# 5. Push to GitHub
+git push origin chandar-books-staff
 
-Commit and push frequently – Regularly commit, push, and pull code to keep the project up to date.
+# 6. Create a Pull Request on GitHub and merge into main
+🧑‍💻 Faisal – Library.cs
 
-Use branches for collaboration – If multiple people are working on the same file, create and use branches to avoid conflicts.
 
-Use separate .cs files for each class – Each class should be in its own file (e.g., Person.cs, Student.cs, Library.cs, etc.). This improves code organization and makes it easier to maintain and navigate.
+Edit
+# 1. Create branch
+git checkout -b faisal-library
+
+# 2. Add Library.cs with AddBook, DisplayBooks, etc.
+
+# 3. Stage and commit
+git add Library.cs
+git commit -m "Implemented Library class with book/patron management"
+
+# 4. Push changes
+git push origin faisal-library
+
+# 5. Create Pull Request and merge
+👩‍💻 Ronia – Person.cs
+
+
+Edit
+# 1. Create branch
+git checkout -b ronia-person
+
+# 2. Add Person.cs base class
+
+# 3. Stage and commit
+git add Person.cs
+git commit -m "Created base class Person with common properties"
+
+# 4. Push to GitHub
+git push origin ronia-person
+
+# 5. Create Pull Request and merge
+🔁 Final Merge & Output Screenshot (Any Member)
+
+
+After merging all components, the group ran the complete program and captured a screenshot of the console output showing:
+
+Initial book availability
+
+Patron details
+
+Borrowing operations
+
+Updated book availability
+
+
+# 1. Switch to main branch
+git checkout main
+git pull origin main
+
+
+# 2. Run the full program
+dotnet build
+dotnet run
+
+# 3. screenshot of output and save as output.png
+
+# 4. Add and commit screenshot
+git add output.png
+git commit -m "Added final output screenshot"
+
+![image](https://github.com/user-attachments/assets/f1d40b97-e594-4046-999d-e13bb911e5d8)
+
