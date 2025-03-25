@@ -115,8 +115,6 @@ git push origin jennifer-main
 # 7. Create a Pull Request on GitHub and merge into main
 🧑‍💻 Chandar – Book.cs and Staff.cs
 
-
-Edit
 # 1. Create a new branch for Book and Staff
 git checkout -b chandar-books-staff
 
@@ -189,8 +187,6 @@ dotnet build
 dotnet run
 
 # 3. screenshot of output and save as output.png
-
-# 4. Add and commit screenshot
 git add output.png
 git commit -m "Added final output screenshot"
 
