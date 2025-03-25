@@ -1,12 +1,15 @@
-public class Student : Person
+namespace Classes
 {
-    public string Major { get; set; }
-    public int GraduationYear { get; set; }
- 
-    public Student(string name, string email, string id, string major, int graduationYear)
-        : base(name, email, id)
+    public class Student : Person
     {
-        Major = major;
-        GraduationYear = graduationYear;
+        public string Major { get; set; }
+        public int GraduationYear { get; set; }
+
+        public Student(string name, string email, int id, string major, int graduationYear)
+            : base(name, email, id)
+        {
+            Major = major;
+            GraduationYear = graduationYear;
+        }
     }
 }
