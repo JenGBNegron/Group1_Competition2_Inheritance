@@ -22,7 +22,7 @@ namespace Classes
         set { email = value; }
     }
 
-    public int ID
+    public string ID
     {
         get { return id; }
         set { id = value; }

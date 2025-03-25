@@ -28,6 +28,7 @@ class Program
  
         // Display initial information
         library.DisplayBooks();
+        Console.WriteLine();
         library.DisplayPatrons();
  
         // Borrowing books

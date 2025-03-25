@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("USF_Library_Management_System")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+254b0bfbc8ac1a921a68f150e292f7b7745063b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38579cf68a69a3b2056a427b839da8d84051d406")]
 [assembly: System.Reflection.AssemblyProductAttribute("USF_Library_Management_System")]
 [assembly: System.Reflection.AssemblyTitleAttribute("USF_Library_Management_System")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
