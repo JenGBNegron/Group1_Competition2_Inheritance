@@ -1,5 +1,6 @@
-Book.cs
-// Book.cs
+
+namespace Classes
+{
 public class Book
 {
     public string Title { get; set; }
@@ -27,4 +28,5 @@ public class Book
             Console.WriteLine($"Sorry, '{Title}' is currently unavailable.");
         }
     }
+}
 }
