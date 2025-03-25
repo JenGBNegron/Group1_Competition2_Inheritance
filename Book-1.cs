@@ -1,3 +1,4 @@
+Book.cs
 // Book.cs
 public class Book
 {
@@ -5,21 +6,25 @@ public class Book
     public string Author { get; set; }
     public string ISBN { get; set; }
     public int AvailableCopies { get; set; }
-    public string Genre { get; set; } // Random detail ra!
-
-    public Book(string title, string author, string isbn, int copies, string genre = "")
+ 
+    public Book(string title, string author, string isbn, int availableCopies)
     {
         Title = title;
         Author = author;
         ISBN = isbn;
-        AvailableCopies = copies;
-        Genre = genre;
+        AvailableCopies = availableCopies;
     }
-
-    public override string ToString()
+ 
+    public void BorrowBook()
     {
-        if (!string.IsNullOrEmpty(Genre))
-            return $"Title: {Title}, Author: {Author}, Available Copies: {AvailableCopies}, Genre: {Genre}";
-        return $"Title: {Title}, Author: {Author}, Available Copies: {AvailableCopies}";
+        if (AvailableCopies > 0)
+        {
+            AvailableCopies--;
+            Console.WriteLine($"Book '{Title}' has been borrowed.");
+        }
+        else
+        {
+            Console.WriteLine($"Sorry, '{Title}' is currently unavailable.");
+        }
     }
 }
