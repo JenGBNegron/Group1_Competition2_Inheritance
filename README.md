@@ -119,8 +119,9 @@ git push origin jennifer-main
 git checkout -b chandar-books-staff
 
 # 2. Add Book.cs
+git add Book.cs 
 # 3. Add Staff.cs
-
+git add Staff.cs
 # 4. Stage and commit
 git add Book.cs Staff.cs
 git commit -m "Added Book and Staff classes with borrowing logic"
@@ -132,7 +133,7 @@ git push origin chandar-books-staff
 🧑‍💻 Faisal – Library.cs
 
 
-Edit
+
 # 1. Create branch
 git checkout -b faisal-library
 
@@ -149,7 +150,6 @@ git push origin faisal-library
 👩‍💻 Ronia – Person.cs
 
 
-Edit
 # 1. Create branch
 git checkout -b ronia-person
 
